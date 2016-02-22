@@ -76,21 +76,21 @@ shinyUI(fluidPage(
       helpText('Equation 52 is \\(ET_{o} = 0.0023(T_{avg} + 17.8)(T_{max} - T_{min})^{0.5}R_{a}\\),
                where \\(ET_{o}\\) is the reference evapotranspiration, \\(T_{avg}\\) is the average air temperature,
                \\(T_{max}\\) and \\(T_{min}\\) are the maximum and minimum air temperatures, respectively,
-               and \\(R_{a}\\) is the extraterrestrial irradiance expressed in units of mm (equivalent evaporation) rather than
+               and \\(R_{a}\\) is the extraterrestrial radiation expressed in units of mm (equivalent evaporation) rather than
                energy units of megajoules per square meter. The date and the latitude allow one to calculate
                \\(R_{a}\\), and the difference between the maximum and minimum air temperature is related to the
                amount of cloud cover, thus this difference can be used to estimate the fraction of extraterrestrial
-               irradiance reaching the surface of the earth.'),
+               radiation reaching the surface of the earth.'),
     
      helpText(HTML(paste('If you would like to check these calculations, you can find tables of values for 
                          extraterrestrial radiation in ',
                     a("Table 2.6 of Crop evapotranspiration.",
                       href = "http://www.fao.org/docrep/x0490e/x0490e0j.htm#annex%202.%20meteorological%20tables"),
-                    ' Convert the extraterrestrial irradiance to equivalent evaporation in mm by multiplying by 0.408,
+                    ' Convert the extraterrestrial radiation to equivalent evaporation in mm by multiplying by 0.408,
                     and that is the \\(R_{a}\\) value to use in Equation 52. For more information about this calculator, 
                     see the code on ',
                     a("GitHub.",
-                      href = "https://github.com/micahwoods?tab=repositories"),
+                      href = "https://github.com/micahwoods/ETo"),
                     sep = "")))
     )
   )
