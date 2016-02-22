@@ -76,7 +76,8 @@ shinyUI(fluidPage(
       helpText('Equation 52 is \\(ET_{o} = 0.0023(T_{avg} + 17.8)(T_{max} - T_{min})^{0.5}R_{a}\\),
                where \\(ET_{o}\\) is the reference evapotranspiration, \\(T_{avg}\\) is the average air temperature,
                \\(T_{max}\\) and \\(T_{min}\\) are the maximum and minimum air temperatures, respectively,
-               and \\(R_{a}\\) is the extraterrestrial irradiance. The date and the latitude allow one to calculate
+               and \\(R_{a}\\) is the extraterrestrial irradiance expressed in units of mm (equivalent evaporation) rather than
+               energy units of megajoules per square meter. The date and the latitude allow one to calculate
                \\(R_{a}\\), and the difference between the maximum and minimum air temperature is related to the
                amount of cloud cover, thus this difference can be used to estimate the fraction of extraterrestrial
                irradiance reaching the surface of the earth.'),
