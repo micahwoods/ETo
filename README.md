@@ -1,0 +1,3 @@
+The `ui.R` and `server.R` files make a [Shiny](http://shiny.rstudio.com/) app, online at https://asianturfgrass.shinyapps.io/ET_calculator/.
+
+With input of latitude and date, code in `server.R` calculates the extraterrestrial radiation. Then the air temperature data are used to estimate how much of the radiation reaches the earth's surface. This is equation 52, the Hargreaves equation, from the [FAO Crop evapotranspiration](http://www.fao.org/docrep/X0490E/x0490e07.htm#an%20alternative%20equation%20for%20eto%20when%20weather%20data%20are%20missing) book.
