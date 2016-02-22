@@ -52,7 +52,9 @@ shinyServer(function(input, output) {
           input$latitude,
           "° from the equator, is ",
           formatC(ETo, digits = 2), 
-          " mm and the crop ET is ",
+          " mm. With a crop coefficient of ",
+          input$kC,
+          " the crop ET is ",
           formatC(ETc, digits = 2),
           " mm.", sep = "")
 
