@@ -41,7 +41,7 @@ shinyUI(fluidPage(
       dateInput("date", "Date:"),
 
       
-      sliderInput("latitude",
+      numericInput("latitude",
                   "Latitude in degrees N or S of the equator; + for northern hemisphere, - for southern hemisphere",
                   min = -70,
                   max = 70,
